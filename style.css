@@ -1,4 +1,5 @@
 body {
+  height: 500px;
   background: #282537;
   background-image: -webkit-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
   background-image: -moz-radial-gradient(top, circle cover, #3c3b52 0%, #252233 80%);
@@ -7,6 +8,15 @@ body {
 }
 
 .title{
+  color: white;
+  text-align: center;
+}
+
+.content {
+  height: 100%;
+}
+
+.footer{
   color: white;
   text-align: center;
 }
