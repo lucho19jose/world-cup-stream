@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" href="assets/icons8-ball-64.png">
   <link rel="stylesheet" href="style.css">
 </head>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TCEPBCKH9M"></script>
 <script>
@@ -27,12 +28,28 @@
       </iframe>
     </div>
   </div>
-  <div class="youtube-chat">
-    <iframe width=”350px” height=”500px” src=”https://www.youtube.com/live_chat?v=J3iP7sfiiQw&embed_domain=lucho19jose.github.io/world-cup-stream” ></iframe>   
+  <div id="app">
+    <div class="youtube-chat" v-if="false">
+      <iframe width=”350px” height=”500px” src=”https://www.youtube.com/live_chat?v=J3iP7sfiiQw&embed_domain=lucho19jose.github.io/world-cup-stream”></iframe>   
+    </div>
   </div>
 
   <footer class="footer">
     hecho con 💚 para ti.
   </footer>
+  <script>
+    const { createApp } = Vue
+
+  createApp({
+    data() {
+      return {
+        message: 'Hello people'
+      }
+    },
+    methods(){
+      
+    }
+  }).mount('#app')
+  </script>
 </body>
 </html>
