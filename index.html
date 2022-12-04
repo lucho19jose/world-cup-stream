@@ -29,8 +29,8 @@
     </div>
   </div>
   <div id="app">
-    <div class="youtube-chat" v-if="true">
-      <iframe width=”350px” height=”500px” src=”https://www.youtube.com/live_chat?v=J3iP7sfiiQw&embed_domain=www.lucho19jose.github.io”></iframe>   
+    <div class="youtube-chat" v-if="path != window.location.href">
+      <iframe width=”350px” height=”500px” src=”https://www.youtube.com/live_chat?v=J3iP7sfiiQw&embed_domain=copamundialcatar.netlify.app”></iframe>   
     </div>
   </div>
 
@@ -43,13 +43,15 @@
   createApp({
     data() {
       return {
-        message: 'Hello people'
+        message: 'Hello people',
+        path: 'https://lucho19jose.github.io/world-cup-stream/'
       }
     },
     methods(){
-      
     }
   }).mount('#app')
+
+  console.log("location", window.location.href);
   </script>
 </body>
 </html>
