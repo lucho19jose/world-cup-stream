@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" href="assets/icons8-ball-64.png">
   <link rel="stylesheet" href="style.css">
 </head>
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> -->
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-TCEPBCKH9M"></script>
 <script>
@@ -28,30 +28,14 @@
       </iframe>
     </div>
   </div>
-  <div id="app">
+<!--   <div id="app">
     <div class="youtube-chat" v-if="true">
       <iframe width=”350px” height=”500px” src=”https://www.youtube.com/live_chat?v=J3iP7sfiiQw&embed_domain=copamundialcatar.netlify.app”></iframe>   
     </div>
-  </div>
+  </div> -->
 
   <footer class="footer">
     hecho con 💚 para ti.
   </footer>
-  <script>
-    const { createApp } = Vue
-
-  createApp({
-    data() {
-      return {
-        message: 'Hello people',
-        path: 'https://lucho19jose.github.io/world-cup-stream/'
-      }
-    },
-    methods(){
-    }
-  }).mount('#app')
-
-  console.log("location", window.location.href);
-  </script>
 </body>
 </html>
